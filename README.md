@@ -1,4 +1,4 @@
-# Starchart
+# starchart
 
 starchart is a quick bash script that creates an image grid of all the users who have starred your project on GitHub. 
 
