@@ -2,6 +2,9 @@
 
 starchart is a quick bash script that creates an image grid of all the users who have starred your project on GitHub. 
 
+
+![donuts-are-good's followers](https://img.shields.io/github/followers/donuts-are-good?&color=555&style=for-the-badge&label=followers) ![donuts-are-good's stars](https://img.shields.io/github/stars/donuts-are-good?affiliations=OWNER%2CCOLLABORATOR&color=555&style=for-the-badge) ![donuts-are-good's visitors](https://komarev.com/ghpvc/?username=donuts-are-good&color=555555&style=for-the-badge&label=visitors)
+
 ## example
 this example is actually the reason starchart was made! it always looked so cool when other projects had enough supporters to showcase them in the readme, so when the opportunity came for [bearclaw](https://github.com/donuts-are-good/bearclaw) to do this, it just felt right.
 
