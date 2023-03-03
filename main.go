@@ -44,6 +44,6 @@ func main() {
 	fmt.Printf("Found %d stargazers for %s/%s\n", len(allStargazers), owner, repo)
 
 	for _, user := range allStargazers {
-		fmt.Printf("<img src=\"%s\" alt=\"%s's avatar\" title=\"%s\"/>\n", *user.User.AvatarURL, *user.User.Login, *user.User.Login)
+		fmt.Printf("<img src=\"%s\" alt=\"%s's avatar\" title=\"%s\"/> ", *user.User.AvatarURL, *user.User.Login, *user.User.Login)
 	}
 }
