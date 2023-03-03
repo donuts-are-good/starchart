@@ -10,12 +10,15 @@ import (
 )
 
 func main() {
+
 	ctx := context.Background()
+
 	token := os.Getenv("GITHUB_TOKEN")
 
 	ts := oauth2.StaticTokenSource(
 		&oauth2.Token{AccessToken: token},
 	)
+
 	tc := oauth2.NewClient(ctx, ts)
 
 	client := github.NewClient(tc)
@@ -44,6 +47,6 @@ func main() {
 	fmt.Printf("Found %d stargazers for %s/%s\n", len(allStargazers), owner, repo)
 
 	for _, user := range allStargazers {
-		fmt.Printf("<img src=\"%s\" alt=\"%s's avatar\" title=\"%s\"/> ", *user.User.AvatarURL, *user.User.Login, *user.User.Login)
+		fmt.Printf("<img width=24 height=24 src=\"%s\" alt=\"%s's avatar\" title=\"%s\"/> ", *user.User.AvatarURL, *user.User.Login, *user.User.Login)
 	}
 }
